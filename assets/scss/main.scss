@@ -1,0 +1,95 @@
+
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+@import "./base/base";
+@import "./base/typography";
+@import "./base/animation";
+@import "./base/slider";
+@import "./base/loader";
+
+@import "./layout/footer";
+@import "./layout/forms";
+@import "./layout/header";
+@import "./layout/layout";
+@import "./layout/navigation";
+
+//Pages
+@import "./pages/index";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $dark-clr;
+  font-size: 1.1rem;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  height: auto;
+  color: $white;
+}
+
+::selection {
+  color: $dark-clr;
+  color: $dark-clr;
+  background: $white;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $dark-clr;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: $primary-clr;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: $primary-clr;
+}
+
+/* Scroll to top start */
+#scroll {
+  position: fixed;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  bottom: 15px;
+  right: 15px;
+  background: $primary-clr;
+  text-indent: -9999px;
+  border: 1px solid $black;
+  display: none;
+  border-radius: 50%;
+  z-index: 999;
+  @include transition;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    transition: all 0.5s ease;
+    border-bottom-color: $black;
+  }
+  
+  &:hover span{
+    border-bottom-color: $white;
+  }
+  &:hover {
+    background: $secondary-clr;
+    border: 1px solid $black;
+  }
+}
