@@ -15,48 +15,60 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
   </head>
   <body>
     <section class="myteam-section">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-12">
-            <div class="">
+            <div class="myteam-description">
               <div class="myteam-header">
-                <div class="myteam-arrow">
-                  <i class="fa-solid fa-arrow-left"></i>
+                <div class="myteam-quiz1">
+                  <div class="myteam-arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </div>
+                  <div class="myteam-heading">
+                    <h4>My Team</h4>
+                  </div>
                 </div>
-                <div class="myteam-heading">
-                  <h4>My Team</h4>
-                </div>
-                <div class="myteam-timing">
-                  <span>1h 26m Left</span>
-                </div>
-                <div class="myteam-quest">
-                  <i class="fa-regular fa-circle-question"></i>
+                <div class="myteam-quiz2">
+                  <div class="myteam-timing">
+                    <span>1h 26m Left</span>
+                  </div>
+                  <div class="myteam-quest">
+                    <i class="fa-regular fa-circle-question"></i>
+                  </div>
                 </div>
               </div>
               <div class="myteam-score">
-                <div class="myteam-image">
-                  <img src="./assets/images/indian-flag.png" alt="India Flag" />
+                <div class="myteam-flags">
+                  <div class="myteam-image">
+                    <img
+                      src="./assets/images/indian-flag.png"
+                      alt="India Flag"
+                    />
+                  </div>
+                  <div class="myteam-text">
+                    <h6>India</h6>
+                  </div>
                 </div>
-                <div class="myteam-text">
-                  <h6>India</h6>
-                </div>
+
                 <div class="myteam-num">
                   <span>4</span>
                 </div>
               </div>
               <div class="myteam-score">
-                <div class="myteam-image">
-                  <img
-                    src="./assets/images/newzealand-flag.png"
-                    alt="India Flag"
-                  />
-                </div>
-                <div class="myteam-text">
-                  <h6>New Zealand</h6>
+                <div class="myteam-flags">
+                  <div class="myteam-image">
+                    <img
+                      src="./assets/images/newzealand-flag.png"
+                      alt="India Flag"
+                    />
+                  </div>
+                  <div class="myteam-text">
+                    <h6>New Zealand</h6>
+                  </div>
                 </div>
                 <div class="myteam-num">
                   <span>3</span>
@@ -77,8 +89,13 @@
                 </div>
                 <div class="myteam-toggle">
                   <div class="list-btn">
-                    <button class="btn">
+                    <button class="btn list-btn-active">
                       <i class="fa-solid fa-list"></i> List
+                    </button>
+                  </div>
+                  <div class="list-btn">
+                    <button class="btn">
+                      <i class="fa-solid fa-list"></i> Pitch
                     </button>
                   </div>
                 </div>
@@ -87,10 +104,11 @@
             <div class="players-table">
               <table class="">
                 <thead>
-                  <tr>
+                  <tr class="players-table_head">
+                    <!-- <div class="players-table_head"></div> -->
                     <th colspan="2">Players</th>
                     <th>Points</th>
-                    <th>Credits</th>
+                    <th colspan="2">Credits</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -99,17 +117,25 @@
                       <img src="./assets/images/blueshirt.png" alt="V kohli" />
                     </td>
                     <td>
-                      <h6>V Kohli</h6>
-                      <span>IND</span>
+                      <div class="players-name">
+                        <h6>V Kohli</h6>
+                        <span>IND</span>
+                      </div>
                     </td>
                     <td>
-                      <span>325.5</span>
+                      <div class="players-points">
+                        <span>325.5</span>
+                      </div>
                     </td>
                     <td>
-                      <span>11.5</span>
+                      <div class="players-credits">
+                        <span>11.5</span>
+                      </div>
                     </td>
                     <td>
-                      <i class="fa-solid fa-plus"></i>
+                      <div class="players-fabtn">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -117,17 +143,25 @@
                       <img src="./assets/images/blueshirt.png" alt="R sharma" />
                     </td>
                     <td>
-                      <h6>R Sharma</h6>
-                      <span>IND</span>
+                      <div class="players-name">
+                        <h6>R Sharma</h6>
+                        <span>IND</span>
+                      </div>
                     </td>
                     <td>
-                      <span>256.5</span>
+                      <div class="players-points">
+                        <span>256.5</span>
+                      </div>
                     </td>
                     <td>
-                      <span>10.5</span>
+                      <div class="players-credits">
+                        <span>10.5</span>
+                      </div>
                     </td>
                     <td>
-                      <i class="fa-solid fa-minus"></i>
+                      <div class="players-fabtn">
+                        <i class="fa-solid fa-minus"></i>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -138,17 +172,25 @@
                       />
                     </td>
                     <td>
-                      <h6>J Neesham</h6>
-                      <span>NZ</span>
+                      <div class="players-name">
+                        <h6>J Neesham</h6>
+                        <span>NZ</span>
+                      </div>
                     </td>
                     <td>
-                      <span>186.5</span>
+                      <div class="players-points">
+                        <span>186.5</span>
+                      </div>
                     </td>
                     <td>
-                      <span>10.5</span>
+                      <div class="players-credits">
+                        <span>10.5</span>
+                      </div>
                     </td>
                     <td>
-                      <i class="fa-solid fa-plus"></i>
+                      <div class="players-fabtn">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -159,17 +201,25 @@
                       />
                     </td>
                     <td>
-                      <h6>K Williamson</h6>
-                      <span>NZ</span>
+                      <div class="players-name">
+                        <h6>K Williamson</h6>
+                        <span>NZ</span>
+                      </div>
                     </td>
                     <td>
-                      <span>386.5</span>
+                      <div class="players-points">
+                        <span>386.5</span>
+                      </div>
                     </td>
                     <td>
-                      <span>10</span>
+                      <div class="players-credits">
+                        <span>10</span>
+                      </div>
                     </td>
                     <td>
-                      <i class="fa-solid fa-plus"></i>
+                      <div class="players-fabtn">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -180,35 +230,54 @@
                       />
                     </td>
                     <td>
-                      <h6>M Agarwal</h6>
-                      <span>IND</span>
+                      <div class="players-name">
+                        <h6>M Agarwal</h6>
+                        <span>IND</span>
+                      </div>
                     </td>
                     <td>
-                      <span>256.5</span>
+                      <div class="players-points">
+                        <span>256.5</span>
+                      </div>
                     </td>
                     <td>
-                      <span>9</span>
+                      <div class="players-credits">
+                        <span>9</span>
+                      </div>
                     </td>
                     <td>
-                      <i class="fa-solid fa-minus"></i>
+                      <div class="players-fabtn">
+                        <i class="fa-solid fa-minus"></i>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src="./assets/images/blueshirt.png" alt="M Guptill" />
+                      <img
+                        src="./assets/images/blueshirt.png"
+                        alt="M Guptill"
+                      />
                     </td>
                     <td>
-                      <h6>M Guptill</h6>
-                      <span>IND</span>
+                      <div class="players-name">
+                        <h6>M Guptill</h6>
+                        <span>IND</span>
+                      </div>
                     </td>
                     <td>
-                      <span>158</span>
+                      <div class="players-points">
+                        <span>158</span>
+                      </div>
                     </td>
                     <td>
-                      <span>8.5</span>
+                      <div class="players-credits">
+                        <span>8.5</span>
+                      </div>
                     </td>
                     <td>
-                      <i class="fa-solid fa-plus"></i>
+                      <div class="players-fabtn">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -231,41 +300,53 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-12">
-            <div class="">
+            <div class="myteam-description">
               <div class="myteam-header">
-                <div class="myteam-arrow">
-                  <i class="fa-solid fa-arrow-left"></i>
+                <div class="myteam-quiz1">
+                  <div class="myteam-arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </div>
+                  <div class="myteam-heading">
+                    <h4>My Team</h4>
+                  </div>
                 </div>
-                <div class="myteam-heading">
-                  <h4>My Team</h4>
-                </div>
-                <div class="myteam-timing">
-                  <span>1h 26m Left</span>
-                </div>
-                <div class="myteam-quest">
-                  <i class="fa-regular fa-circle-question"></i>
+                <div class="myteam-quiz2">
+                  <div class="myteam-timing">
+                    <span>1h 26m Left</span>
+                  </div>
+                  <div class="myteam-quest">
+                    <i class="fa-regular fa-circle-question"></i>
+                  </div>
                 </div>
               </div>
               <div class="myteam-score">
-                <div class="myteam-image">
-                  <img src="./assets/images/indian-flag.png" alt="India Flag" />
+                <div class="myteam-flags">
+                  <div class="myteam-image">
+                    <img
+                      src="./assets/images/indian-flag.png"
+                      alt="India Flag"
+                    />
+                  </div>
+                  <div class="myteam-text">
+                    <h6>India</h6>
+                  </div>
                 </div>
-                <div class="myteam-text">
-                  <h6>India</h6>
-                </div>
+
                 <div class="myteam-num">
                   <span>4</span>
                 </div>
               </div>
               <div class="myteam-score">
-                <div class="myteam-image">
-                  <img
-                    src="./assets/images/newzealand-flag.png"
-                    alt="India Flag"
-                  />
-                </div>
-                <div class="myteam-text">
-                  <h6>New Zealand</h6>
+                <div class="myteam-flags">
+                  <div class="myteam-image">
+                    <img
+                      src="./assets/images/newzealand-flag.png"
+                      alt="India Flag"
+                    />
+                  </div>
+                  <div class="myteam-text">
+                    <h6>New Zealand</h6>
+                  </div>
                 </div>
                 <div class="myteam-num">
                   <span>3</span>
@@ -290,13 +371,18 @@
                       <i class="fa-solid fa-list"></i> List
                     </button>
                   </div>
+                  <div class="list-btn">
+                    <button class="btn list-btn-active">
+                      <i class="fa-solid fa-list"></i> Pitch
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="team-ground">
               <ul>
-                <li>
+                <li class="d-flex justify-content-center">
                   <div class="team-description">
                     <div class="team-positions">
                       <h6>Wicket Keepers</h6>
@@ -307,122 +393,130 @@
                   </div>
                 </li>
                 <li>
-                  <ul>
+                  <ul class="team-flex">
                     <li>
                       <div class="team-description">
                         <div class="team-positions">
-                          <h6>Wicket Keepers</h6>
+                          <!-- <h6>Wicket Keepers</h6> -->
                           <img src="./assets/images/blueshirt.png" alt="" />
-                          <span class="">MS Dhoni</span>
-                          <p>11Cr</p>
+                          <span class="">R&nbsp;sharma</span>
+                          <p>10.5Cr</p>
                         </div>
                       </div>
                     </li>
                     <li>
                       <div class="team-description">
                         <div class="team-positions">
-                          <h6>Wicket Keepers</h6>
-                          <img src="./assets/images/blueshirt.png" alt="" />
-                          <span class="">MS Dhoni</span>
-                          <p>11Cr</p>
+                          <!-- <h6>Wicket Keepers</h6> -->
+                          <img src="./assets/images/blackshirt.png" alt="" />
+                          <span class="team-bgclr">R&nbsp;Taylor</span>
+                          <p>9Cr</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="team-description team-description-active">
+                        <div class="team-positions">
+                          <h6>Batsmen</h6>
+                          <img src="./assets/images/blackshirt.png" alt="" />
+                          <span class="team-bgclr">K&nbsp;Williamson</span>
+                          <p>10Cr</p>
+                          <h6>All&nbsp;Rounder</h6>
                         </div>
                       </div>
                     </li>
                     <li>
                       <div class="team-description">
                         <div class="team-positions">
-                          <h6>Wicket Keepers</h6>
+                          <!-- <h6>Wicket Keepers</h6> -->
                           <img src="./assets/images/blueshirt.png" alt="" />
-                          <span class="">MS Dhoni</span>
-                          <p>11Cr</p>
+                          <span class="">M&nbsp;Agarwal</span>
+                          <p>8.5Cr</p>
                         </div>
                       </div>
                     </li>
                     <li>
                       <div class="team-description">
                         <div class="team-positions">
-                          <h6>Wicket Keepers</h6>
+                          <!-- <h6>Wicket Keepers</h6> -->
                           <img src="./assets/images/blueshirt.png" alt="" />
-                          <span class="">MS Dhoni</span>
-                          <p>11Cr</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="team-description">
-                        <div class="team-positions">
-                          <h6>Wicket Keepers</h6>
-                          <img src="./assets/images/blueshirt.png" alt="" />
-                          <span class="">MS Dhoni</span>
-                          <p>11Cr</p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>
-                      <div class="team-description">
-                        <div class="team-positions">
-                          <h6>Wicket Keepers</h6>
-                          <img src="./assets/images/blueshirt.png" alt="" />
-                          <span class="">MS Dhoni</span>
-                          <p>11Cr</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="team-description">
-                        <div class="team-positions">
-                          <h6>Wicket Keepers</h6>
-                          <img src="./assets/images/blueshirt.png" alt="" />
-                          <span class="">MS Dhoni</span>
-                          <p>11Cr</p>
+                          <span class="">M&nbsp;Agarwal</span>
+                          <p>8.5Cr</p>
                         </div>
                       </div>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <ul>
+                  <ul class="team-flex">
                     <li>
                       <div class="team-description">
                         <div class="team-positions">
-                          <h6>Wicket Keepers</h6>
-                          <img src="./assets/images/blueshirt.png" alt="" />
-                          <span class="">MS Dhoni</span>
-                          <p>11Cr</p>
+                          <!-- <h6>Wicket Keepers</h6> -->
+                          <img src="./assets/images/blackshirt.png" alt="" />
+                          <span class="team-bgclr">J Neesham</span>
+                          <p>7.5Cr</p>
                         </div>
                       </div>
                     </li>
                     <li>
                       <div class="team-description">
                         <div class="team-positions">
-                          <h6>Wicket Keepers</h6>
+                          <!-- <h6>Wicket Keepers</h6> -->
                           <img src="./assets/images/blueshirt.png" alt="" />
-                          <span class="">MS Dhoni</span>
-                          <p>11Cr</p>
+                          <span class="">R Jadeja</span>
+                          <p>7Cr</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="team-description">
+                    <div class="team-positions">
+                      <h6>Bowler</h6>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <ul class="team-flex">
+                    <li>
+                      <div class="team-description">
+                        <div class="team-positions">
+                          <!-- <h6>Wicket Keepers</h6> -->
+                          <img src="./assets/images/blackshirt.png" alt="" />
+                          <span class="team-bgclr">T Southee</span>
+                          <p>8Cr</p>
                         </div>
                       </div>
                     </li>
                     <li>
                       <div class="team-description">
                         <div class="team-positions">
-                          <h6>Wicket Keepers</h6>
+                          <!-- <h6>Wicket Keepers</h6> -->
                           <img src="./assets/images/blueshirt.png" alt="" />
-                          <span class="">MS Dhoni</span>
-                          <p>11Cr</p>
+                          <span class="">J Bumrah</span>
+                          <p>10Cr</p>
                         </div>
                       </div>
                     </li>
                     <li>
                       <div class="team-description">
                         <div class="team-positions">
-                          <h6>Wicket Keepers</h6>
+                          <!-- <h6>Wicket Keepers</h6> -->
+                          <img src="./assets/images/blackshirt.png" alt="" />
+                          <span class="team-bgclr">M Henri</span>
+                          <p>7Cr</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="team-description">
+                        <div class="team-positions">
+                          <!-- <h6>Wicket Keepers</h6> -->
                           <img src="./assets/images/blueshirt.png" alt="" />
-                          <span class="">MS Dhoni</span>
-                          <p>11Cr</p>
+                          <span class="">B Kumar</span>
+                          <p>7.5Cr</p>
                         </div>
                       </div>
                     </li>

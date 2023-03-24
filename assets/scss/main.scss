@@ -29,7 +29,7 @@ html {
 
 body {
   background-color: $dark-clr;
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: 100%;
   -webkit-font-smoothing: antialiased;
   height: auto;
@@ -37,7 +37,6 @@ body {
 }
 
 ::selection {
-  color: $dark-clr;
   color: $dark-clr;
   background: $white;
 }
